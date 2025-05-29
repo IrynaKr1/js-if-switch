@@ -68,3 +68,21 @@ switch (dayNumber) {
     console.log('дня з таким номером не існує');
     break;
 }
+
+//Switch 2
+
+const day = 1;
+
+switch (true) {
+  case day >= 1 && day <= 10:
+    console.log('Перша декада');
+    break;
+  case day >= 11 && day <= 20:
+    console.log('Друга декада');
+    break;
+  case day >= 21 && day <= 31:
+    console.log('Третя декада');
+    break;
+  default:
+    console.log('Введено не правильний номер');
+}
