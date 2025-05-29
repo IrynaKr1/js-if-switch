@@ -24,3 +24,17 @@ if (!isOnline) {
     "Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет"
   );
 }
+
+// 3
+const toPay = Number(prompt('Введіть суму покупки'));
+let sumToPay = 0;
+
+if (toPay <= 500) {
+  console.log('Знижка не застосовується');
+} else if (toPay > 500 && toPay < 800) {
+  sumToPay = toPay * 0.97;
+  console.log('Знижка 3%. До заплати: ', sumToPay);
+} else {
+  sumToPay = toPay * 0.95;
+  console.log('Знижка 5%. До заплати: ', sumToPay);
+}
