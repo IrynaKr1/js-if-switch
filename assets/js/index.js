@@ -1,19 +1,15 @@
 // 1
-// const isDay = true;
+const isDay = true;
 
-// if (isDay) {
-//   document.write(`
-//         <body style="background-color: #f0f0f0; color: #222; font-size: 24px; padding: 20px;">
-//           Світла тема
-//         </body>
-//       `);
-// } else {
-//   document.write(`
-//         <body style="background-color: #222; color: #f0f0f0; font-size: 24px; padding: 20px;">
-//           Темна тема
-//         </body>
-//       `);
-// }
+document.write(`
+  <body 
+    style="background-color: ${isDay ? '#f0f0f0' : '#222'}; 
+    color:  ${isDay ? '#222' : '#f0f0f0'}; 
+    font-size: 24px; padding: 20px;"
+  >
+    ${isDay ? 'Світла' : 'Темна'} тема
+  </body>
+`)
 
 // 2
 
@@ -39,50 +35,50 @@
 //   console.log('Знижка 5%. До заплати: ', sumToPay);
 // }
 
-//Switch 1
-const dayNumber = Number(prompt('Введіть номер дня тижня '));
+// //Switch 1
+// const dayNumber = Number(prompt('Введіть номер дня тижня '));
 
-switch (dayNumber) {
-  case 1:
-    console.log('Понеділок');
-    break;
-  case 2:
-    console.log('вівторок');
-    break;
-  case 3:
-    console.log('середа');
-    break;
-  case 4:
-    console.log('четвер');
-    break;
-  case 5:
-    console.log("п'ятниця");
-    break;
-  case 6:
-    console.log('субота');
-    break;
-  case 7:
-    console.log('неділя');
-    break;
-  default:
-    console.log('дня з таким номером не існує');
-    break;
-}
+// switch (dayNumber) {
+//   case 1:
+//     console.log('Понеділок');
+//     break;
+//   case 2:
+//     console.log('вівторок');
+//     break;
+//   case 3:
+//     console.log('середа');
+//     break;
+//   case 4:
+//     console.log('четвер');
+//     break;
+//   case 5:
+//     console.log("п'ятниця");
+//     break;
+//   case 6:
+//     console.log('субота');
+//     break;
+//   case 7:
+//     console.log('неділя');
+//     break;
+//   default:
+//     console.log('дня з таким номером не існує');
+//     break;
+// }
 
-//Switch 2
+// //Switch 2
 
-const day = 1;
+// const day = 1;
 
-switch (true) {
-  case day >= 1 && day <= 10:
-    console.log('Перша декада');
-    break;
-  case day >= 11 && day <= 20:
-    console.log('Друга декада');
-    break;
-  case day >= 21 && day <= 31:
-    console.log('Третя декада');
-    break;
-  default:
-    console.log('Введено не правильний номер');
-}
+// switch (true) {
+//   case day >= 1 && day <= 10:
+//     console.log('Перша декада');
+//     break;
+//   case day >= 11 && day <= 20:
+//     console.log('Друга декада');
+//     break;
+//   case day >= 21 && day <= 31:
+//     console.log('Третя декада');
+//     break;
+//   default:
+//     console.log('Введено не правильний номер');
+// }
